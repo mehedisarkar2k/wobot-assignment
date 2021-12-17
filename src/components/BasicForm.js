@@ -62,7 +62,7 @@ const BasicForm = ({ proceedHandler }) => {
                 className="bg-white border border-gray-500 text-gray-900 placeholder-gray-400 text-sm rounded-lg focus:outline-gray-500 focus:ring-gray-500 focus:border-gray-500  block w-full p-2.5 "
                 placeholder="Company name"
               />
-              <p className="hidden mt-2 text-sm text-green-600 dark:text-green-500">
+              <p className="hidden mt-2 text-sm text-green-600">
                 <span className="font-medium">Alright!</span> Username
                 available!
               </p>
@@ -85,7 +85,7 @@ const BasicForm = ({ proceedHandler }) => {
                 as="select"
                 name="industry"
                 id="industry"
-                className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:outline-gray-500 focus:ring-gray-500 focus:border-gray-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500"
+                className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:outline-gray-500 focus:ring-gray-500 focus:border-gray-500 block w-full p-2.5"
                 placeholder="select"
               >
                 <option disabled value="">
@@ -121,7 +121,7 @@ const BasicForm = ({ proceedHandler }) => {
                   />
                   <label
                     htmlFor="company-option-1"
-                    className="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    className="block ml-2 text-sm font-medium text-gray-900"
                   >
                     1-20
                   </label>
@@ -137,7 +137,7 @@ const BasicForm = ({ proceedHandler }) => {
                   />
                   <label
                     htmlFor="company-option-2"
-                    className="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    className="block ml-2 text-sm font-medium text-gray-900 "
                   >
                     21-50
                   </label>
@@ -153,7 +153,7 @@ const BasicForm = ({ proceedHandler }) => {
                   />
                   <label
                     htmlFor="company-option-3"
-                    className="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    className="block ml-2 text-sm font-medium text-gray-900"
                   >
                     51-200
                   </label>
@@ -169,7 +169,7 @@ const BasicForm = ({ proceedHandler }) => {
                   />
                   <label
                     htmlFor="company-option-4"
-                    className="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    className="block ml-2 text-sm font-medium text-gray-900"
                   >
                     201-500
                   </label>
@@ -185,7 +185,7 @@ const BasicForm = ({ proceedHandler }) => {
                   />
                   <label
                     htmlFor="company-option-5"
-                    className="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    className="block ml-2 text-sm font-medium text-gray-900 "
                   >
                     500+
                   </label>
@@ -195,7 +195,7 @@ const BasicForm = ({ proceedHandler }) => {
 
             <button
               type="submit"
-              className="w-full text-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              className="w-full text-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5"
             >
               Get Started
             </button>
