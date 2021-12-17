@@ -20,7 +20,7 @@ const validationSchema = Yup.object({
 const Login = () => {
   return (
     <div className="w-full">
-      <div className="w-2/5 mx-auto rounded-2xl shadow-xl hover:shadow-2xl px-14 py-7 transition relative bg-white">
+      <div className="w-full md:w-3/5 lg:w-2/5 mx-auto md:rounded-2xl shadow-xl hover:shadow-2xl px-10 md:px-14 py-5 md:py-7 transition bg-white">
         {/* icon */}
         <img className="h-9 mx-auto mb-0" src={icon} alt={"line icon"} />
         <Formik
@@ -29,11 +29,11 @@ const Login = () => {
           validationSchema={validationSchema}
         >
           <Form>
-            <div className="mb-6">
-              <h2 className="text-slate-900 text-3xl font-semibold text-center mb-4">
+            <div className="mb-4 md:mb-6">
+              <h2 className="text-slate-900 text-xl md:text-3xl font-semibold text-center mb-2 md:mb-4">
                 Login
               </h2>
-              <p className="text-gray-400 text-base text-center mb-6">
+              <p className="text-gray-600 text-sm md:text-base text-center mb-4 md:mb-6">
                 Enter your credentials to continue
               </p>
               <label
@@ -54,7 +54,7 @@ const Login = () => {
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
               />
             </div>
-            <div className="mb-6">
+            <div className="mb-4 md:mb-6">
               <label
                 htmlFor="password"
                 className="block mb-2 text-sm font-medium text-gray-900"
@@ -101,7 +101,7 @@ const Login = () => {
           </Form>
         </Formik>
       </div>
-      <p className="text-gray-400 mt-10 text-center">
+      <p className="text-gray-400 mt-5 md:mt-10 text-center">
         Terms of use | Privacy policy
       </p>
     </div>

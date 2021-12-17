@@ -22,15 +22,15 @@ const BasicForm = ({ proceedHandler }) => {
   };
   return (
     <div className="w-full">
-      <div className="w-2/5 mx-auto rounded-2xl shadow-xl hover:shadow-2xl px-14 py-7 transition bg-white">
+      <div className="w-full md:w-3/5 lg:w-2/5 mx-auto md:rounded-2xl shadow-xl hover:shadow-2xl px-10 md:px-14 py-5 md:py-7 transition bg-white">
         {/* icon */}
-        <img className="h-9 mx-auto mb-2" src={icon} alt={"line icon"} />
+        <img className="h-7 md:h-9 mx-auto mb-2" src={icon} alt={"line icon"} />
 
         {/* form title */}
-        <h2 className="text-slate-900 text-3xl font-semibold text-center mb-4">
+        <h2 className="text-slate-900 text-xl md:text-3xl font-semibold text-center mb-2 md:mb-4">
           It’s a delight to have you onboard
         </h2>
-        <p className="text-gray-600 text-base text-center mb-6">
+        <p className="text-gray-600 text-sm md:text-base text-center mb-4 md:mb-6">
           Help us know you better. (This is how we optimize Wobot as per your
           business needs)
         </p>
@@ -43,7 +43,7 @@ const BasicForm = ({ proceedHandler }) => {
         >
           <Form>
             {/* company name field */}
-            <div className="mb-6">
+            <div className="mb-4 md:mb-6">
               <label
                 htmlFor="company"
                 className="block mb-2 text-sm font-medium text-gray-700"
@@ -69,7 +69,7 @@ const BasicForm = ({ proceedHandler }) => {
             </div>
 
             {/* industry field */}
-            <div className="mb-6">
+            <div className="mb-4 md:mb-6">
               <label
                 htmlFor="industry"
                 className="block mb-2 text-sm font-medium text-gray-700"
@@ -101,7 +101,7 @@ const BasicForm = ({ proceedHandler }) => {
             </div>
 
             {/* company size field */}
-            <div className="mb-6">
+            <div className="mb-4 md:mb-6">
               <label className="block mb-2 text-sm font-medium text-gray-700">
                 Company Size:{" "}
                 <ErrorMessage
@@ -110,7 +110,7 @@ const BasicForm = ({ proceedHandler }) => {
                   component="span"
                 />
               </label>
-              <div className="flex space-x-4">
+              <div className="flex flex-col md:flex-row md:space-x-4">
                 <div className="flex items-center mb-4">
                   <Field
                     id="company-option-1"
@@ -202,7 +202,7 @@ const BasicForm = ({ proceedHandler }) => {
           </Form>
         </Formik>
       </div>
-      <p className="text-gray-400 mt-10 text-center">
+      <p className="text-gray-400 mt-5 md:mt-10 text-center">
         Terms of use | Privacy policy
       </p>
     </div>
